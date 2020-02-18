@@ -2,4 +2,4 @@
 
 Complete Task for Rolling Scopes School
 
-# my cv https://signtone.github.io/rsschool-cv/cv
+# my cv https://signtone.github.io/rsschool-cv/
