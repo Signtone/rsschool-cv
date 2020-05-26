@@ -53,8 +53,11 @@ body {
   -webkit-box-shadow: 5px -3px 55px 3px rgba(0,0,0,0.75);
   -moz-box-shadow: 5px -3px 55px 3px rgba(0,0,0,0.75);
   box-shadow: 5px -3px 55px 3px rgba(0,0,0,0.75);
-  transition: 0.5s ease-out;
+  transition: 0.7s ease-out;
   cursor: pointer;
+  background-color: rgb(104, 20, 104);
+  color: rgb(123, 180, 32);
+  border-radius: 20%;
 }
 
 .nav-bar li:not(:first-child):before {
@@ -135,10 +138,26 @@ blockquote {
 }
 
 .experience-list li {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .experience-list span {
   font-size: 18px;
+}
+
+.courses-list {
+  list-style: none;
+}
+
+.courses-list li {
+  font-size: 20px;
+}
+
+.certificates-list {
+  list-style: none;
+}
+
+.certificates-list li {
+  font-size: 20px;
 }
 
