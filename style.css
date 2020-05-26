@@ -62,7 +62,7 @@ body {
   font-weight: 1200;
   color: rgb(99, 22, 99);
   position: relative;
-  right: 4px;
+  right: 5px;
   top: 2px;
 }
 
@@ -121,4 +121,24 @@ blockquote {
   font-size: 20px;
 }
 
+.education-list {
+  list-style: none;
+  font-size: 24px;
+}
+
+.education-list li {
+  font-size: 20px;
+}
+
+.experience-list {
+  list-style: none;
+}
+
+.experience-list li {
+  font-size: 24px;
+}
+
+.experience-list span {
+  font-size: 18px;
+}
 
