@@ -22,21 +22,21 @@
       </div>
       <nav class="navigation">
         <ul class="nav-bar">
-          <li>Summary</li>
-          <li>Technical Skills</li>
-          <li>Education</li>
-          <li>Experience</li>
-          <li>Online Courses</li>
-          <li>Certificates</li>
-          <li>Code Example</li>
-          <li>Weekend Projects</li>
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#tech">Technical Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#courses">Online Courses</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#example">Code Example</a></li>
+          <li><a href="#weekend">Weekend Projects</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="contacts">
         <div class="contact-info">
-          <h3>Contact info:</h3>
+          <h3 id="summary">Contact info:</h3>
           <ul class="contact-item">
             <li><span>City:</span> Minsk</li>
             <li><span>Phone:</span> <a href="tel:+375-44-712-82-22" blank> +375-44-712-82-22</a></li>
@@ -56,7 +56,7 @@
       </section>
       <section class="technical-skills">
         <div class="skills">
-          <h3>Technical Skills:</h3>
+          <h3 id="tech">Technical Skills:</h3>
           <ul class="skills-list">
             <li><span>Programming Languages and Technologies:</span> HTML, CSS (SCSS/SASS), JavaScript(ES6, ES2016), Swift, Objective-C.</li>
             <li><span>Tools:</span> GIT, VScode, Xcode, Photoshop, Figma, Webpack, SQL BD (msSQL).</li>
@@ -66,7 +66,7 @@
       </section>
       <section class="education">
         <div class="education-block">
-          <h3>Education:</h3>
+          <h3 id="education">Education:</h3>
           <ul class="education-list">
             <li><span>Belarusian State University:</span> Bachelor's Degree, Software Design of Information Systems.</li>
           </ul>
@@ -74,7 +74,7 @@
       </section>
       <section class="experience">
         <div class="experience-block">
-          <h3>Experience:</h3>
+          <h3 id="experience">Experience:</h3>
           <ul class="experience-list">
             <li>As a training project for the defense of the discipline “Development and Design of Web Applications”, developed the web application “Currency Converter” using the open Api of the “National Bank of the Republic of Belarus”.</li>
             <li><span>GitHub link:</span> <a href="https://github.com/Signtone/JavaScript/tree/master/JavaScript/Study/CurrencyConverter%20on%20JS" blank> Currency Converter</a></li>
@@ -86,7 +86,7 @@
       </section>
       <section class="courses">
         <div class="courses-block">
-          <h3>Online Courses:</h3>
+          <h3 id="courses">Online Courses:</h3>
           <ul class="courses-list">
             <li><a href="https://htmlacademy.ru/profile/signtone" blank>- HTML Academy</a></li>
             <li><a href="https://rs.school/index.html" blank>- The Rolling Scopes School</a></li>
@@ -96,7 +96,7 @@
         </div>
       </section>
       <section class="certificates">
-        <h3>Certificates:</h3>
+        <h3 id="certificates">Certificates:</h3>
         <ul class="certificates-list">
           <li>- Software Project Management</li>
           <li>- Business Analyses Foundation</li>
@@ -106,7 +106,7 @@
     <div class="wrapper">
       <section class="code">
         <div class="code-block">
-          <h3>Code Example:</h3>
+          <h3 id="example">Code Example:</h3>
           <pre>
             <code>
               function convertMoney(amount, outputId) {
@@ -143,7 +143,7 @@
       </section>
       <section class="weekend-projects">
         <div class="weekend-block">
-          <h3>Weekend Projects:</h3>
+          <h3 id="weekend">Weekend Projects:</h3>
           <ul class="weekend-list">
             <li>I'm one of the leaders of Belarus biggest iOS developers community - CocoaHeads Belarus. My expertise:</li>
             <li>- Moderating community telegram channel.</li>
@@ -155,5 +155,18 @@
     </div>
     </main>
   </div>
+  <script>
+    const anchors = document.querySelectorAll('a[href*="#"]')
+      for (let anchor of anchors) {
+      anchor.addEventListener('click', function (e) {
+      e.preventDefault()
+      const blockID = anchor.getAttribute('href').substr(1)
+      document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
+  </script>
 </body>
 </html>
