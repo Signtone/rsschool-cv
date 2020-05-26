@@ -155,9 +155,19 @@ blockquote {
 
 .certificates-list {
   list-style: none;
+  margin-bottom: -15px;
 }
 
 .certificates-list li {
   font-size: 20px;
 }
+
+.weekend-list {
+  list-style: none;
+}
+
+.weekend-list li {
+  font-size: 20px;
+}
+
 

@@ -39,8 +39,8 @@
           <h3>Contact info:</h3>
           <ul class="contact-item">
             <li><span>City:</span> Minsk</li>
-            <li><span>Phone:</span> <a href="tel:+375-44-712-82-22"> +375-44-712-82-22</a></li>
-            <li><span>E-mail:</span> <a href="mailto:signtone@protonmail.com"> signtone@protonmail.com</a></li>
+            <li><span>Phone:</span> <a href="tel:+375-44-712-82-22" blank> +375-44-712-82-22</a></li>
+            <li><span>E-mail:</span> <a href="mailto:signtone@protonmail.com" blank> signtone@protonmail.com</a></li>
             <li><span>LinkedIn:</span> <a href="https://www.linkedin.com/in/signtone/" blank> https://www.linkedin.com/in/signtone/</a></li>
             <li><span>Telegram:</span> @Signtone</li>
             <li><span>GitHub:</span> <a href="https://github.com/Signtone" blank> https://github.com/Signtone</a></li>
@@ -58,7 +58,7 @@
         <div class="skills">
           <h3>Technical Skills:</h3>
           <ul class="skills-list">
-            <li><span>Programming Languages and Technologies:</span> HTML, CSS/SCSS/SASS, JavaScript(ES6, ES2016), Swift, Objective-C.</li>
+            <li><span>Programming Languages and Technologies:</span> HTML, CSS (SCSS/SASS), JavaScript(ES6, ES2016), Swift, Objective-C.</li>
             <li><span>Tools:</span> GIT, VScode, Xcode, Photoshop, Figma, Webpack, SQL BD (msSQL).</li>
             <li><span>Other Skills:</span> Advanced Windows User, MacOS, Linux, Audio Mixing&Mastering, Video Editing.</li>
           </ul>
@@ -103,6 +103,56 @@
         </ul>
         </div>
       </section>
+    <div class="wrapper">
+      <section class="code">
+        <div class="code-block">
+          <h3>Code Example:</h3>
+          <pre>
+            <code>
+              function convertMoney(amount, outputId) {
+                var inputIndex = getRate(requestCurrency);
+                var outputIndex = getRate(currency);
+
+                if (requestCurrency === "BYN") {
+                  if (currency === "BYN") {
+                    var value = (1 * amount).toFixed(2);
+                    setOutputValue(value, outputId);
+                  } else {
+                    getValue(outputIndex).then(function (requestRes) {
+                      var value = (amount / requestRes).toFixed(2);
+                      setOutputValue(value, outputId);
+                    });
+                  }
+                } else if (currency === "BYN") {
+                  getValue(inputIndex).then(function (requestRes) {
+                    var value = (amount * requestRes).toFixed(2);
+                    setOutputValue(value, outputId);
+                  });
+                } else {
+                  getValue(inputIndex).then(function (res) {
+                    getValue(outputIndex).then(function (requestRes) {
+                      var value = ((res / requestRes) * amount).toFixed(2);
+                      setOutputValue(value, outputId);
+                    });
+                  });
+                }
+              }
+            </code>
+          </pre>
+        </div>
+      </section>
+      <section class="weekend-projects">
+        <div class="weekend-block">
+          <h3>Weekend Projects:</h3>
+          <ul class="weekend-list">
+            <li>I'm one of the leaders of Belarus biggest iOS developers community - CocoaHeads Belarus. My expertise:</li>
+            <li>- Moderating community telegram channel.</li>
+            <li>- Developing community recommendations and FAQs regarding iOS development as well as other matters.</li>
+            <li>- Running official community YouTube channel.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
     </main>
   </div>
 </body>
