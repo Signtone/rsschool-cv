@@ -1,6 +1,7 @@
 body {
   background-color: rgb(218, 218, 218);
-  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -14,15 +15,14 @@ body {
 .photo-portfolio {
   width: 35%;
   border-radius: 5%;
-  -webkit-box-shadow: 4px -3px 42px -13px rgba(0,0,0,0.75);
-  -moz-box-shadow: 4px -3px 42px -13px rgba(0,0,0,0.75);
-  box-shadow: 4px -3px 42px -13px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 4px -3px 42px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px -3px 42px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px -3px 42px -13px rgba(0, 0, 0, 0.75);
 }
 
 .intro {
   display: flex;
   justify-content: space-between;
-
 }
 
 .name {
@@ -36,7 +36,6 @@ body {
 .photo {
   text-align: center;
   margin-top: 30px;
-
 }
 
 .nav-bar {
@@ -44,15 +43,36 @@ body {
   list-style: none;
   justify-content: space-between;
   margin-right: 5%;
-  font-size: 19px;
+  font-size: 20px;
   font-weight: bold;
   color: rgb(99, 22, 99);
 }
 
-.nav-bar li:hover {
-  -webkit-box-shadow: 5px -3px 55px 3px rgba(0,0,0,0.75);
-  -moz-box-shadow: 5px -3px 55px 3px rgba(0,0,0,0.75);
-  box-shadow: 5px -3px 55px 3px rgba(0,0,0,0.75);
+.nav-bar a:hover {
+  -webkit-box-shadow: 5px -3px 55px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px -3px 55px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px -3px 55px 3px rgba(0, 0, 0, 0.75);
+  transition: 0.4s ease-out;
+  cursor: pointer;
+  background-color: rgb(104, 20, 104);
+  color: rgb(123, 180, 32);
+  border-radius: 20%;
+}
+
+.nav-bar a:active {
+  color: rgb(99, 22, 99);
+  box-shadow: none;
+  background-color: rgb(202, 196, 199);
+  transition: 0.2s ease-out;
+}
+
+.nav-bar li:not(:first-child):before {
+  content: "·";
+  font-weight: 1200;
+  color: rgb(99, 22, 99);
+  position: relative;
+  right: 5px;
+  top: 2px;
 }
 
 h3 {
@@ -64,7 +84,12 @@ h3 {
 
 .contacts {
   margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
 
+.contact-info {
+  flex: 2;
 }
 
 .contact-info li {
@@ -81,4 +106,75 @@ a {
 span {
   font-size: 24px;
   font-weight: bold;
+}
+
+.summary {
+  flex: 2;
+}
+
+blockquote {
+  font-size: 24px;
+  border-left: 3px solid rgb(99, 22, 99);
+  padding-left: 5px;
+}
+
+.skills-list {
+  list-style: none;
+  font-size: 24px;
+}
+
+.skills-list li {
+  font-size: 20px;
+}
+
+.education-list {
+  list-style: none;
+  font-size: 24px;
+}
+
+.education-list li {
+  font-size: 20px;
+}
+
+.experience-list {
+  list-style: none;
+}
+
+.experience-list li {
+  font-size: 20px;
+}
+
+.experience-list span {
+  font-size: 18px;
+}
+
+.courses-list {
+  list-style: none;
+}
+
+.courses-list li {
+  font-size: 20px;
+}
+
+.certificates-list {
+  list-style: none;
+  margin-bottom: -10px;
+}
+
+.certificates-list li {
+  font-size: 20px;
+}
+
+.weekend-list {
+  list-style: none;
+}
+
+.weekend-list li {
+  font-size: 20px;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-end;
 }
